@@ -5,6 +5,7 @@ import path from 'path';
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [svelte()],
+  base: '/portfolio/', // Change if your repo name is different
   resolve: {
     alias: {
       $lib: path.resolve('./src/lib'),
