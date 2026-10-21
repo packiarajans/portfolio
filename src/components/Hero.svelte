@@ -100,11 +100,11 @@
         <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-primary-500/10 rounded-full blur-3xl" aria-hidden="true"></div>
         <div class="absolute -top-6 -left-6 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl" aria-hidden="true"></div>
         
-        <div class="absolute -top-8 -right-8 w-48 h-48 rounded-full overflow-hidden border-4 border-primary-200 dark:border-primary-800 shadow-2xl">
+        <div class="absolute -top-10 -right-6 z-10 w-44 h-44 sm:w-52 sm:h-52 rounded-full overflow-hidden border-4 border-primary-200 dark:border-primary-800 shadow-2xl">
           <img 
-            src="/profile.png" 
+            src={import.meta.env.BASE_URL + 'profile-photo.jpg'} 
             alt="Packiarajan Sivasubramanian" 
-            class="w-full h-full object-cover"
+            class="w-full h-full object-cover object-top"
           />
         </div>
       </div>
