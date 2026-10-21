@@ -6,7 +6,7 @@
       description: 'Multi-phase ML + geospatial pipeline that rates any latitude/longitude for risk and opportunity. Features include distance to road, distance to hospital and DEM-derived flood risk, modelled with Random Forest and XGBoost with SHAP explanations on a PostGIS backend. City-generic, single-command pipeline; first applied to Chennai and Indian cities.',
       image: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%230c4a6e'/><stop offset='1' stop-color='%236366f1'/></linearGradient></defs><rect width='800' height='600' fill='url(%23g)'/><g stroke='%23ffffff' stroke-opacity='.15'><path d='M0 60H800'/><path d='M0 120H800'/><path d='M0 180H800'/><path d='M0 240H800'/><path d='M0 300H800'/><path d='M0 360H800'/><path d='M0 420H800'/><path d='M0 480H800'/><path d='M0 540H800'/><path d='M80 0V600'/><path d='M160 0V600'/><path d='M240 0V600'/><path d='M320 0V600'/><path d='M400 0V600'/><path d='M480 0V600'/><path d='M560 0V600'/><path d='M640 0V600'/><path d='M720 0V600'/></g><circle cx='400' cy='280' r='110' fill='%23ffffff' fill-opacity='.12'/><path d='M400 170c-45 0-80 35-80 80 0 60 80 150 80 150s80-90 80-150c0-45-35-80-80-80z' fill='%23ffffff'/><circle cx='400' cy='250' r='30' fill='%236366f1'/></svg>",
       tags: ['Python', 'Scikit-learn', 'XGBoost', 'SHAP', 'PostGIS', 'FME Workbench'],
-      github: '#',
+      github: 'https://github.com/packiarajans/geosense-agent-2',
       demo: '#',
       featured: true,
       category: 'GeoAI Project',
@@ -42,7 +42,7 @@
       description: 'Built a Logistic Regression model with 81% accuracy and 0.85 F1-score. Applied EDA and feature engineering on large datasets to identify key churn factors.',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
       tags: ['Python', 'Scikit-learn', 'Logistic Regression', 'EDA', 'Feature Engineering'],
-      github: '#',
+      github: 'https://github.com/packiarajans/ML-Projects/tree/main/Telecom%20Churn%20Project',
       demo: '#',
       featured: false,
       category: 'AI/ML Project',
@@ -54,7 +54,7 @@
       description: 'Developed a CNN model for smart-city GIS applications. Evaluated with precision, recall, and cross-validation metrics for traffic signal recognition.',
       image: 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&h=600&fit=crop',
       tags: ['TensorFlow', 'Keras', 'Python', 'CNN', 'Computer Vision'],
-      github: '#',
+      github: 'https://github.com/packiarajans/ML-Projects/tree/main/Traffice%20Signal%20Detection',
       demo: '#',
       featured: false,
       category: 'AI/ML Project',
@@ -105,6 +105,7 @@
             </p>
 
             <div class="flex items-center gap-4 pt-4 border-t border-gray-100 dark:border-gray-800">
+              {#if project.github && project.github !== '#'}
               <a
                 href={project.github}
                 target="_blank"
@@ -116,6 +117,8 @@
                 </svg>
                 Code
               </a>
+              {/if}
+              {#if project.demo && project.demo !== '#'}
               <a
                 href={project.demo}
                 target="_blank"
@@ -127,6 +130,7 @@
                 </svg>
                 Demo
               </a>
+              {/if}
             </div>
           </div>
         </article>
