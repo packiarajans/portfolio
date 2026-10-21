@@ -57,7 +57,7 @@
       date: '2024-05-20',
       readTime: '6 min read',
       category: 'Career',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=450&fit=crop',
+      image: '/transition.jpg',
       slug: 'transition-enterprise-it-geospatial-data-science',
     },
   ];
