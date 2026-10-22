@@ -18,7 +18,7 @@
       description: 'Built an interactive WebGIS for plant species mapping and survey tracking. Designed KPI dashboards with progress charts and plant inventory tables. Validated the platform through a trial field survey in Salem District.',
       image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop',
       tags: ['React.js', 'PostGIS', 'GeoServer', 'Leaflet', 'Python'],
-      github: '#',
+      github: 'https://github.com/packiarajans/geoforest-webgis',
       demo: '#',
       featured: true,
       category: 'GIS Project',
