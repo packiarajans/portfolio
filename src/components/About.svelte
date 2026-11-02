@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let bio = `Detail-oriented GIS professional pursuing an M.Tech in Geoinformatics (University of Madras) with hands-on expertise in ArcGIS Pro, QGIS, FME Workbench, and PostGIS. Combines spatial analysis, remote sensing, and UAV data processing with 14+ years of enterprise IT experience in cloud infrastructure and data management. Skilled in LULC classification, ETL workflows, and geospatial visualization.`;
+  export let bio = `Detail-oriented GIS professional pursuing an M.Tech in Geoinformatics (University of Madras) with hands-on expertise in ArcGIS Pro, QGIS, FME Workbench, and PostGIS. Combines spatial analysis, remote sensing, and UAV data processing with 14+ years of enterprise IT experience in cloud infrastructure and data management. Skilled in LULC classification, ETL workflows, and geospatial visualization. Proven client-facing communicator with pre-sales, RFP/RFI and solution-design experience, and strong data management skills (data integrity, migration, backup and governance).`;
 
   const skills = [
     { category: 'GIS Platforms', items: ['ArcGIS Pro', 'ArcMap', 'QGIS', 'SAGA'] },
@@ -11,6 +11,8 @@
     { category: 'Databases', items: ['PostgreSQL', 'PostGIS', 'Neo4j'] },
     { category: 'Programming', items: ['Python', 'SQL', 'R (spatial analysis)'] },
     { category: 'Cloud Platforms', items: ['AWS', 'Azure'] },
+    { category: 'Data Management', items: ['Data Integrity & Quality', 'Migration', 'Backup & Recovery', 'Data Governance', 'Metadata Management', 'Spatial Database Administration'] },
+    { category: 'Client-Facing & Pre-Sales', items: ['Client Requirement Gathering', 'Solution Design', 'RFP/RFI Responses', 'Technical Presentations & Demos', 'Stakeholder Communication', 'Proposal & Cost Estimation'] },
     { category: 'Data Formats', items: ['Shapefile', 'GeoJSON', 'KML', 'TIFF', 'Raster', 'Vector', 'Point Cloud'] },
   ];
 
@@ -28,7 +30,9 @@
       period: '2008–2022',
       location: 'USA (2008–2011) | India (2011–2022)',
       highlights: [
-        'Led pre-sales and RFP/RFI responses for cloud infrastructure solutions',
+        'Led pre-sales and RFP/RFI responses for cloud infrastructure solutions, including client discovery, solution design, cost estimation and technical presentations to win enterprise deals.',
+        'Client-facing role: gathered requirements, ran workshops and demos, and served as trusted advisor to enterprise stakeholders across the USA and India.',
+        'Data management: ensured data integrity, backup/recovery and governance for large-scale enterprise data during migrations and operations.',
         'Designed IaaS solutions across AWS and Azure for enterprise clients',
         'Managed workload migration ensuring zero downtime and data integrity',
       ],

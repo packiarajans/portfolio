@@ -1,0 +1,54 @@
+/* Portfolio beautification layer — loads AFTER the existing stylesheet; structure untouched */
+:root{--c1:#0ea5e9;--c2:#6366f1;--c3:#14b8a6;--ink:#0f172a;--grad:linear-gradient(135deg,#0ea5e9 0%,#6366f1 55%,#a855f7 100%)}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:
+ radial-gradient(900px 500px at 10% -5%,rgba(14,165,233,.14),transparent 60%),
+ radial-gradient(800px 500px at 95% 8%,rgba(168,85,247,.12),transparent 60%),#f8fafc;-webkit-font-smoothing:antialiased}
+.dark body{background:
+ radial-gradient(900px 500px at 10% -5%,rgba(14,165,233,.18),transparent 60%),
+ radial-gradient(800px 500px at 95% 8%,rgba(168,85,247,.16),transparent 60%),#030712}
+h1,h2,h3,h4{font-family:'Plus Jakarta Sans','Inter',sans-serif;letter-spacing:-.02em}
+h1{font-weight:800}
+code,pre{font-family:'JetBrains Mono',monospace}
+/* gradient accent text (hero name, section accents) */
+#hero h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent!important}
+#hero h2,#hero h1+p{color:#0369a1;font-weight:600}
+.dark #hero h2{color:#7dd3fc}
+/* header glass */
+header{backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4)}
+header.scrolled,header[class*="shadow"]{background:rgba(255,255,255,.72)!important;box-shadow:0 8px 30px rgba(2,132,199,.10)}
+.dark header.scrolled,.dark header[class*="shadow"]{background:rgba(3,7,18,.72)!important}
+/* buttons */
+.btn,.btn-primary,.btn-outline,.btn-secondary{border-radius:999px;font-weight:600;transition:transform .2s,box-shadow .2s;display:inline-flex;align-items:center;justify-content:center;padding:.8rem 1.6rem}
+.btn-primary{background-image:var(--grad);border:0;color:#fff;box-shadow:0 8px 22px rgba(99,102,241,.35)}
+.btn-primary:hover,.btn-outline:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(99,102,241,.40)}
+.btn-outline{border:2px solid #0ea5e9;color:#0369a1;background:rgba(255,255,255,.6)}
+.btn-outline:hover{background:rgba(14,165,233,.1)}
+/* cards */
+.card{border-radius:18px;border:1px solid rgba(148,163,184,.25);background:rgba(255,255,255,.75);backdrop-filter:blur(8px);box-shadow:0 4px 20px rgba(15,23,42,.05);transition:transform .25s,box-shadow .25s,border-color .25s;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:var(--grad);opacity:0;transition:opacity .25s}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(99,102,241,.18);border-color:rgba(99,102,241,.45)}
+.card:hover::before{opacity:1}
+.dark .card{background:rgba(17,24,39,.7);border-color:rgba(71,85,105,.5)}
+/* sections: alternating tinted bands */
+.section{position:relative}
+#about{background:linear-gradient(180deg,rgba(14,165,233,.06),rgba(99,102,241,.06))!important}
+#blog{background:linear-gradient(180deg,rgba(20,184,166,.06),rgba(14,165,233,.06))!important}
+.dark #about,.dark #blog{background:linear-gradient(180deg,rgba(14,165,233,.08),rgba(99,102,241,.08))!important}
+.section h2{position:relative;display:inline-block}
+.section h2::after{content:"";display:block;height:4px;width:56px;margin-top:10px;border-radius:4px;background:var(--grad)}
+.text-center h2::after,.section .text-center h2::after{margin-left:auto;margin-right:auto}
+/* skill / tech tags */
+[class*="rounded-full"][class*="text-"]:not(.btn){transition:transform .15s,background .15s}
+[class*="rounded-full"][class*="bg-primary"],[class*="rounded-full"][class*="bg-gray-100"]{background:linear-gradient(135deg,rgba(14,165,233,.14),rgba(99,102,241,.14))!important;color:#4338ca!important;border:1px solid rgba(99,102,241,.22)}
+.dark [class*="rounded-full"][class*="bg-primary"],.dark [class*="rounded-full"][class*="bg-gray-100"]{color:#a5b4fc!important}
+[class*="rounded-full"][class*="bg-gray-100"]:hover{transform:translateY(-2px)}
+/* hero code window */
+#hero pre,#hero [class*="rounded-xl"][class*="bg-gray-900"],#hero [class*="bg-gray-900"]{background:linear-gradient(160deg,#0b1224,#1e1b4b)!important;box-shadow:0 30px 60px rgba(30,27,75,.35),0 0 0 1px rgba(255,255,255,.06)}
+/* links, inputs, selection */
+a{transition:color .15s}
+.input{border-radius:12px}
+.input:focus{border-color:var(--c2);box-shadow:0 0 0 4px rgba(99,102,241,.18)}
+::selection{background:#c7d2fe;color:#1e1b4b}
+::-webkit-scrollbar{width:10px}::-webkit-scrollbar-thumb{background:linear-gradient(#0ea5e9,#6366f1);border-radius:8px}
+footer{background:linear-gradient(180deg,transparent,rgba(99,102,241,.07))!important}
