@@ -35,7 +35,7 @@
     />
 
     <About
-      bio="Detail-oriented GIS professional pursuing an M.Tech in Geoinformatics (University of Madras) with hands-on expertise in ArcGIS Pro, QGIS, FME Workbench, and PostGIS. Combines spatial analysis, remote sensing, and UAV data processing with 14+ years of enterprise IT experience in cloud infrastructure and data management. Skilled in LULC classification, ETL workflows, and geospatial visualization."
+      bio="Detail-oriented GIS professional pursuing an M.Tech in Geoinformatics (University of Madras) with hands-on expertise in ArcGIS Pro, QGIS, FME Workbench, and PostGIS. Combines spatial analysis, remote sensing, and UAV data processing with 14+ years of enterprise IT experience in cloud infrastructure and data management. Skilled in LULC classification, ETL workflows, and geospatial visualization. Proven client-facing communicator with pre-sales, RFP/RFI and solution-design experience, and strong data management skills (data integrity, migration, backup and governance)."
     />
 
     <Projects />
